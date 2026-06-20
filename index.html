@@ -194,6 +194,10 @@
     position:relative;overflow:hidden;
     border-bottom:1px solid var(--hairline);
   }
+  .photo-ph img{
+    width:100%;height:100%;object-fit:cover;object-position:center top;
+    position:relative;z-index:1;
+  }
   .photo-ph::before{
     content:'';position:absolute;inset:0;
     background-image:linear-gradient(var(--hairline) 1px, transparent 1px),linear-gradient(90deg, var(--hairline) 1px, transparent 1px);
@@ -355,7 +359,7 @@
     <div class="team-grid">
 
       <div class="team-card">
-        <div class="photo-ph"><span class="initials">BÖ</span></div>
+        <div class="photo-ph"><img src="bayram.jpg" alt="Bayram Özatak"></div>
         <div class="team-info">
           <h3>Bayram Özatak</h3>
           <div class="role" data-i18n="team.m1.role">Hardware &amp; Cybersecurity</div>
@@ -382,7 +386,7 @@
       </div>
 
       <div class="team-card">
-        <div class="photo-ph"><span class="initials">YÜ</span></div>
+        <div class="photo-ph"><img src="yavuz.jpg" alt="Yavuz Selim Ünal"></div>
         <div class="team-info">
           <h3>Yavuz Selim Ünal</h3>
           <div class="role" data-i18n="team.m4.role">AI Automation &amp; Financial Risk Management</div>
@@ -391,7 +395,7 @@
       </div>
 
       <div class="team-card">
-        <div class="photo-ph"><span class="initials">SY</span></div>
+        <div class="photo-ph"><img src="semih.jpg" alt="Semih Yiğit"></div>
         <div class="team-info">
           <h3>Semih Yiğit</h3>
           <div class="role" data-i18n="team.m5.role">AI Automation, Financial Risk Management &amp; Sales/Marketing</div>
