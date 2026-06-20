@@ -9,15 +9,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0B0E13;
-    --panel:#12161F;
-    --panel-2:#161B26;
-    --hairline:#232938;
-    --text:#E8E9ED;
-    --muted:#8B93A3;
-    --gold:#C2A36B;
-    --gold-dim:rgba(194,163,107,0.35);
-    --blue:#4D7298;
+    --bg:#FFFFFF;
+    --panel:#F4F5F7;
+    --panel-2:#FAFBFC;
+    --hairline:#E1E4EA;
+    --text:#16213A;
+    --muted:#5C6675;
+    --gold:#9C7A38;
+    --gold-dim:rgba(156,122,56,0.32);
+    --blue:#2C4A6E;
     --maxw:1180px;
   }
 
@@ -70,7 +70,7 @@
   /* ---------- Top Nav ---------- */
   .nav{
     position:sticky;top:0;z-index:100;
-    background:rgba(11,14,19,0.85);
+    background:rgba(255,255,255,0.86);
     backdrop-filter:blur(10px);
     border-bottom:1px solid var(--hairline);
   }
@@ -97,13 +97,13 @@
     padding:7px 12px;background:transparent;border:none;color:var(--muted);
     cursor:pointer;letter-spacing:0.06em;
   }
-  .lang-btn.active{background:var(--gold);color:#0B0E13;}
+  .lang-btn.active{background:var(--gold);color:var(--text);}
   .nav-cta{
     border:1px solid var(--gold-dim);color:var(--gold);font-size:13px;
     padding:9px 18px;letter-spacing:0.03em;border-radius:3px;
     transition:background .25s ease, color .25s ease;
   }
-  .nav-cta:hover{background:var(--gold);color:#0B0E13;}
+  .nav-cta:hover{background:var(--gold);color:var(--text);}
   .nav-burger{display:none;background:none;border:none;color:var(--text);font-size:22px;cursor:pointer;}
 
   @media (max-width:860px){
@@ -152,7 +152,7 @@
   }
   .btn-primary{
     display:inline-flex;align-items:center;gap:10px;
-    background:var(--gold);color:#0B0E13;font-size:14px;font-weight:500;
+    background:var(--gold);color:var(--text);font-size:14px;font-weight:500;
     padding:15px 28px;border-radius:3px;letter-spacing:0.02em;
     transition:transform .25s ease, box-shadow .25s ease;
   }
@@ -190,7 +190,7 @@
   .team-card{background:var(--panel);border:1px solid var(--hairline);}
   .photo-ph{
     aspect-ratio:4/5;background:
-      linear-gradient(160deg, #1A2030 0%, #0E1219 100%);
+      linear-gradient(160deg, #EEF1F5 0%, #E2E6ED 100%);
     position:relative;overflow:hidden;
     border-bottom:1px solid var(--hairline);
   }
@@ -201,7 +201,7 @@
   }
   .photo-ph .initials{
     position:absolute;bottom:18px;right:18px;
-    font-family:'Fraunces',serif;font-size:38px;color:var(--gold-dim);
+    font-family:'Fraunces',serif;font-size:38px;color:rgba(156,122,56,0.45);
   }
   .team-info{padding:24px 22px;}
   .team-info h3{font-size:19px;margin-bottom:6px;}
@@ -250,7 +250,7 @@
   .field textarea{resize:vertical;min-height:110px;}
   .submit-btn{
     grid-column:1 / -1;justify-self:start;
-    background:var(--gold);color:#0B0E13;border:none;font-size:14px;font-weight:500;
+    background:var(--gold);color:var(--text);border:none;font-size:14px;font-weight:500;
     padding:15px 30px;border-radius:3px;cursor:pointer;letter-spacing:0.02em;
     transition:transform .25s ease;
   }
